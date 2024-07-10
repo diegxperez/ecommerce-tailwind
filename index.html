@@ -13,11 +13,136 @@
     />
   </head>
 
-  <body>
-    <header>
-      <nav>
-        <h1 class="mt-0 text-3xl font-bold bg-black text-white">Hola</h1>
+  <body class="min-h-dvh bg-white font-montserrat">
+    <header class="bg-brandBlue px-6">
+      <nav class="flex h-16 items-center justify-between">
+        <button>
+          <img class="h-8 w-8" src="./src/icons/menu.svg" alt="" />
+        </button>
+
+        <button class="ml-8">
+          <img class="h-8 w-8" src="./src/img/store-logo.png" alt="" />
+        </button>
+
+        <div class="flex items-center justify-center gap-2">
+          <button>
+            <img
+              class="h-8 w-8"
+              src="./src/icons/icon_cart.svg"
+              alt="icon car"
+            />
+          </button>
+          <button>
+            <img
+              class="h-8 w-8"
+              src="./src/icons/icon_person.svg"
+              alt="icon person"
+            />
+          </button>
+        </div>
       </nav>
     </header>
+
+    <main>
+      <section class="flex h-96 items-center justify-center bg-brandSecondary">
+        <h2
+          class="mx-2.5 text-pretty text-center text-3xl font-bold text-pureWhite"
+        >
+          La calidad y eficiencia es parte de nuestro servicio
+        </h2>
+      </section>
+
+      <section class="flex flex-col items-center justify-center bg-darkNavy">
+        <h3 class="size my-8 text-xl font-bold text-pureWhite">
+          Nuestro recorrido
+        </h3>
+        <p class="mx-2.5 mb-8 text-pretty text-center text-base text-pureWhite">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nisl,
+          sed facilisis ut. Massa pretium, quis nullam faucibus nunc hendrerit
+          vitae morbi est. Id phasellus lacinia sodales consectetur in viverra
+          nunc. Lacus, condimentum pulvinar in morbi morbi tincidunt massa
+          velit, volutpat. Erat varius vulputate ullamcorper volutpat
+          ullamcorper at eget rutrum. Scelerisque pulvinar fringilla sit semper
+          dictum consequat, pharetra. Sagittis quam convallis eu id. Imperdiet
+          adipiscing etiam a amet nec pellentesque ipsum justo.
+        </p>
+      </section>
+
+      <section class="mx-2.5 flex flex-col items-center">
+        <div class="flex flex-col items-center">
+          <h3 class="size text-grey my-8 text-xl font-bold">Mision</h3>
+          <p class="text-grey mb-8 text-pretty text-center text-base">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus
+            nisl, sed facilisis ut. Massa pretium, quis nullam faucibus nunc
+            hendrerit vitae morbi est. Id phasellus lacinia sodales consectetur
+            in viverra nunc. Lacus, condimentum pulvinar in morbi morbi
+            tincidunt massa velit, volutpat . Erat varius vulputate ullamcorper
+            volutpat ullamcorper at eget rutrum.
+          </p>
+        </div>
+
+        <div class="mx-14 mb-8 flex">
+          <div class="flex flex-row">
+            <div class="flex items-center">
+              <img src="./src/img/section-mision/rectangle65.png" alt="" />
+            </div>
+            <div class="flex flex-col">
+              <img src="./src/img/section-mision/Rectangle66.png" alt="" />
+
+              <img src="./src/img/section-mision/Rectangle67.png" alt="" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <footer class="flex flex-col gap-y-8 bg-brandBlue p-2.5 text-softWhite">
+        <div class="mt-5">
+          <img src="./src/img/store-logo.png" alt="" class="w-8" />
+        </div>
+
+        <nav class="flex flex-col gap-y-8">
+          <div class="flex justify-between">
+            <div class="flex flex-col gap-y-2.5">
+              <p class="font-bold">INFO</p>
+              <a href="">Sobre nosotros</a>
+              <a href="">FAQ</a>
+            </div>
+            <div class="flex flex-col gap-y-2.5">
+              <p class="font-bold">SERVICIOS</p>
+              <a href="">Categorias</a>
+              <a href="">Delivery</a>
+              <a href="">Promociones</a>
+            </div>
+          </div>
+
+          <div class="flex flex-col gap-y-2.5">
+            <p class="font-bold">CONTACTANOS</p>
+            <p>
+              Lorem ipsum dolor sit amet, cons ectetur adi piscing elit, sed do
+              eiusmod tempor incididunt ut labore et dolore magna aliqu nulla
+              pariatur.
+            </p>
+          </div>
+
+          <div class="flex gap-5">
+            <img src="./src/icons/socials/icon_ig.svg" alt="icon instagram" />
+            <img
+              src="./src/icons/socials/icon_facebook.svg"
+              alt="icon facebook"
+            />
+            <img
+              src="./src/icons/socials/icon_twitter.svg"
+              alt="icon twitter"
+            />
+          </div>
+
+          <div class="flex flex-col gap-y-2.5">
+            <a href="" class="font-semibold">Terminos y condiciones</a>
+            <a href="" class="font-semibold">Politica de devolucion</a>
+            <p class="my-8 text-center text-xs">© 2020 Market</p>
+          </div>
+        </nav>
+      </footer>
+    </main>
   </body>
 </html>

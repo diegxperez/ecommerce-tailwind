@@ -4,18 +4,18 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        montserrat: ['Montserrat', 'sans-serif'],
+        montserrat: ["Montserrat", "sans-serif"],
       },
       colors: {
-        brandBlue: '#152C51',
-        darkNavy: '#0C192E',
-        brandSecondary: '#152C51',
-        softWhite: '#ECE8E8',
-        pureWhite: '#FFFFFF',
-        skyBlue: '#4DC8FF',
-      }
+        brandBlue: "#152C51",
+        darkNavy: "#0C192E",
+        brandSecondary: "#C15001",
+        softWhite: "#ECE8E8",
+        pureWhite: "#FCFDFF",
+        skyBlue: "#4DC8FF",
+        grey: "#817D7D",
+      },
     },
   },
   plugins: [],
-}
-
+};
