@@ -15,8 +15,8 @@
 
   <body class="min-h-dvh bg-white font-montserrat">
     <header class="bg-brandBlue px-6">
-      <nav class="flex h-16 items-center justify-between">
-        <button>
+      <nav class="flex h-16 items-center justify-between lg:max-w-[1300px] lg:ml-auto lg:mr-auto">
+        <button class="lg:hidden">
           <img class="h-8 w-8" src="./src/icons/menu.svg" alt="" />
         </button>
 
@@ -24,17 +24,36 @@
           <img class="h-8 w-8" src="./src/img/store-logo.png" alt="" />
         </button>
 
-        <div class="flex items-center justify-center gap-2">
-          <button>
+        <ul class="text-softWhite font-semibold gap-x-5 hidden lg:flex">
+          <a href="#">Categorias</a>
+          <a href="#">Nosotros</a>
+          <a href="#">Delivery</a>
+          <a href="#">Promociones</a>
+        </ul>
+
+        <div class="items-center hidden lg:flex">
+          <input class="border-none pl-1 placeholder:text-gray-400 w-64" type="text" placeholder="Buscar">
+          <button class="bg-[#FE7C20] border-none w-8 flex justify-center items-center rounded -translate-x-2">
+            <img src="./src/icons/icon_search.svg" alt="">
+          </button>
+        </div>
+
+        <div class="flex items-center justify-center gap-2 lg:gap-x-5">
+          <div class="flex justify-center items-center gap-x-1">
+            <p class="text-softWhite self-baseline text-xs font-semibold">Bsf</p>
+            <img src="./src/icons/icon_chevron-down.svg" alt="" class="h-3">
+          </div>
+
+          <button class="lg:order-2">
             <img
-              class="h-8 w-8"
+              class="h-8 w-8 "
               src="./src/icons/icon_cart.svg"
               alt="icon car"
             />
           </button>
-          <button>
+          <button class="lg:order-1">
             <img
-              class="h-8 w-8"
+              class="h-8 w-8 "
               src="./src/icons/icon_person.svg"
               alt="icon person"
             />
@@ -44,19 +63,27 @@
     </header>
 
     <main>
-      <section class="flex h-96 items-center justify-center bg-brandSecondary">
+      <section
+        class="flex h-96 items-center justify-center bg-brandSecondary lg:h-[600px]"
+      >
         <h2
-          class="mx-2.5 text-pretty text-center text-3xl font-bold text-pureWhite"
+          class="mx-2.5 text-pretty text-center text-3xl font-bold text-pureWhite lg:max-w-[1000px] lg:text-6xl lg:font-semibold"
         >
           La calidad y eficiencia es parte de nuestro servicio
         </h2>
       </section>
 
-      <section class="flex flex-col items-center justify-center bg-darkNavy">
-        <h3 class="size my-8 text-xl font-bold text-pureWhite">
+      <section
+        class="flex flex-col items-center justify-center bg-darkNavy lg:h-[600px]"
+      >
+        <h3
+          class="size my-8 text-xl font-bold text-pureWhite lg:text-3xl lg:font-semibold"
+        >
           Nuestro recorrido
         </h3>
-        <p class="mx-2.5 mb-8 text-pretty text-center text-base text-pureWhite">
+        <p
+          class="mx-2.5 mb-8 max-w-[952px] text-pretty text-center text-base text-pureWhite lg:text-left lg:text-2xl"
+        >
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus nisl,
           sed facilisis ut. Massa pretium, quis nullam faucibus nunc hendrerit
           vitae morbi est. Id phasellus lacinia sodales consectetur in viverra
@@ -68,10 +95,16 @@
         </p>
       </section>
 
-      <section class="mx-2.5 flex flex-col items-center">
-        <div class="flex flex-col items-center">
-          <h3 class="size text-grey my-8 text-xl font-bold">Mision</h3>
-          <p class="text-grey mb-8 text-pretty text-center text-base">
+      <section
+        class="lg: mx-2.5 flex flex-col items-center lg:ml-auto lg:mr-auto lg:h-[800px] lg:max-w-[1300px] lg:flex-row lg:justify-between"
+      >
+        <div class="flex flex-col items-start lg:max-w-[500px]">
+          <h3 class="size my-8 text-xl font-bold text-brandBlue lg:text-3xl">
+            Mision
+          </h3>
+          <p
+            class="mb-8 text-pretty text-center text-base text-brandBlue lg:text-left lg:text-2xl"
+          >
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cursus
             nisl, sed facilisis ut. Massa pretium, quis nullam faucibus nunc
             hendrerit vitae morbi est. Id phasellus lacinia sodales consectetur
@@ -81,27 +114,44 @@
           </p>
         </div>
 
-        <div class="mx-14 mb-8 flex">
+        <div class="mx-14 mb-8 flex lg:mx-0 lg:mb-0">
           <div class="flex flex-row">
             <div class="flex items-center">
-              <img src="./src/img/section-mision/rectangle65.png" alt="" />
+              <img
+                src="./src/img/section-mision/rectangle65.png"
+                alt=""
+                class=""
+              />
             </div>
             <div class="flex flex-col">
-              <img src="./src/img/section-mision/Rectangle66.png" alt="" />
+              <img
+                src="./src/img/section-mision/Rectangle66.png"
+                alt=""
+                class=""
+              />
 
-              <img src="./src/img/section-mision/Rectangle67.png" alt="" />
+              <img
+                src="./src/img/section-mision/Rectangle67.png"
+                alt=""
+                class="lg:"
+              />
             </div>
           </div>
         </div>
       </section>
 
-      <footer class="flex flex-col gap-y-8 bg-brandBlue p-2.5 text-softWhite">
+      <footer
+        class=" bg-brandBlue lg:py-5"
+      >
+      <div class="flex flex-col gap-y-8 p-2.5 text-softWhite lg:max-w-[1300px] lg:ml-auto lg:mr-auto lg:p-0 " >
+
+      
         <div class="mt-5">
           <img src="./src/img/store-logo.png" alt="" class="w-8" />
         </div>
 
-        <nav class="flex flex-col gap-y-8">
-          <div class="flex justify-between">
+        <nav class="flex flex-col gap-y-8 lg:flex-row lg:justify-between">
+          <div class="flex justify-between lg:gap-x-16">
             <div class="flex flex-col gap-y-2.5">
               <p class="font-bold">INFO</p>
               <a href="">Sobre nosotros</a>
@@ -115,7 +165,7 @@
             </div>
           </div>
 
-          <div class="flex flex-col gap-y-2.5">
+          <div class="flex flex-col gap-y-2.5 lg:w-[420px]">
             <p class="font-bold">CONTACTANOS</p>
             <p>
               Lorem ipsum dolor sit amet, cons ectetur adi piscing elit, sed do
@@ -124,23 +174,32 @@
             </p>
           </div>
 
-          <div class="flex gap-5">
-            <img src="./src/icons/socials/icon_ig.svg" alt="icon instagram" />
+          <div class="flex gap-5 lg:flex-col lg:gap-y-2">
+            <img
+              src="./src/icons/socials/icon_ig.svg"
+              alt="icon instagram"
+              class="h-4" 
+            />
             <img
               src="./src/icons/socials/icon_facebook.svg"
               alt="icon facebook"
+              class="h-4"
             />
             <img
               src="./src/icons/socials/icon_twitter.svg"
               alt="icon twitter"
+              class="h-4"
             />
           </div>
 
-          <div class="flex flex-col gap-y-2.5">
+          <div class="flex flex-col gap-y-2.5 lg:order-first">
             <a href="" class="font-semibold">Terminos y condiciones</a>
             <a href="" class="font-semibold">Politica de devolucion</a>
-            <p class="my-8 text-center text-xs">© 2020 Market</p>
+            <p class="my-8 text-center text-xs lg:my-0 lg:text-left">
+              © 2020 Market
+            </p>
           </div>
+        </div>
         </nav>
       </footer>
     </main>
